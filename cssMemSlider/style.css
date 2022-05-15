@@ -111,3 +111,26 @@ body{
 	background-size: cover;
 	background-position-y: 100%;
 }
+
+.visible-title{
+	width: 40%;
+	height: 9%;
+	margin-top: 5%;
+	overflow: hidden;
+	border: #383838 0.15em solid;
+	padding-top: 1%;
+	border-radius: 10%;
+}
+
+.titles{
+	width: 600%;
+	height: 100%;
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+
+.titles p{
+	width: 16.66666667%;
+	height: 100%;
+	text-align: center;
+}

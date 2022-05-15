@@ -112,9 +112,17 @@ body{
 	background-position-y: 100%;
 }
 
+.under-container{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .visible-title{
 	width: 40%;
-	height: 9%;
+	height: 40%;
 	margin-top: 5%;
 	overflow: hidden;
 	border: #383838 0.15em solid;
@@ -136,8 +144,8 @@ body{
 }
 
 .controls{
-	width: 32%;
-	height: 10%;
+	width: 40%;
+	height: 45%;
 	background-color: #424242;
 	margin-top: 5%;
 	display: flex;
@@ -187,47 +195,47 @@ body{
 	margin-left: -500%;
 }
 
-#mem1:checked ~ .visible-title .titles {
+#mem1:checked ~ .under-container .visible-title .titles {
 	margin-left: 0;
 }
-#mem2:checked ~ .visible-title .titles {
+#mem2:checked ~ .under-container .visible-title .titles {
 	margin-left: -100%;
 }
-#mem3:checked ~ .visible-title .titles {
+#mem3:checked ~ .under-container .visible-title .titles {
 	margin-left: -200%;
 }
-#mem4:checked ~ .visible-title .titles {
+#mem4:checked ~ .under-container .visible-title .titles {
 	margin-left: -300%;
 }
-#mem5:checked ~ .visible-title .titles {
+#mem5:checked ~ .under-container .visible-title .titles {
 	margin-left: -400%;
 }
-#mem6:checked ~ .visible-title .titles {
+#mem6:checked ~ .under-container .visible-title .titles {
 	margin-left: -500%;
 }
 
-#mem1:checked ~ .controls label:nth-child(1) {
+#mem1:checked ~ .under-container .controls label:nth-child(1) {
 	background-color: rgb(90, 44, 0);
 }
-#mem2:checked ~ .controls label:nth-child(2) {
+#mem2:checked ~ .under-container .controls label:nth-child(2) {
 	background-color: rgb(90, 44, 0);
 }
-#mem3:checked ~ .controls label:nth-child(3) {
+#mem3:checked ~ .under-container .controls label:nth-child(3) {
 	background-color: rgb(90, 44, 0);
 }
-#mem4:checked ~ .controls label:nth-child(4) {
+#mem4:checked ~ .under-container .controls label:nth-child(4) {
 	background-color: rgb(90, 44, 0);
 }
-#mem5:checked ~ .controls label:nth-child(5) {
+#mem5:checked ~ .under-container .controls label:nth-child(5) {
 	background-color: rgb(90, 44, 0);
 }
-#mem6:checked ~ .controls label:nth-child(6) {
+#mem6:checked ~ .under-container .controls label:nth-child(6) {
 	background-color: rgb(90, 44, 0);
 }
 
 @media (max-width: 320px){
 	body{
-		font-size: 1.3em;
+		font-size: 1em;
 	}
 	.container-slider{
 		width: 95%;
@@ -235,17 +243,24 @@ body{
 	.visible-mem{
 		width: 100%;
 	}
+    .under-container{
+        width: 100%;
+    }
 	.visible-title{
-		width: 70%;
-		height: 10%;
+		width: 40%;
+		height: 50%;
 	}
 	.controls{
-		width: 60%;
+		width: 50%;
+        height: 40%;
 	}
 	.controls label{
-		height: 80%;
+		height: 70%;
 	}
 	.mem1{
+		background-position-x: center;
+	}
+    .mem2{
 		background-position-x: center;
 	}
 	.mem3{

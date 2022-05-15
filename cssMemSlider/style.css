@@ -167,3 +167,60 @@ body{
 .controls label:active{
 	background-color: rgb(165, 83, 6);
 }
+
+#mem1:checked ~ .visible-mem .mems {
+	margin-left: 0;
+}
+#mem2:checked ~ .visible-mem .mems {
+	margin-left: -100%;
+}
+#mem3:checked ~ .visible-mem .mems {
+	margin-left: -200%;
+}
+#mem4:checked ~ .visible-mem .mems {
+	margin-left: -300%;
+}
+#mem5:checked ~ .visible-mem .mems {
+	margin-left: -400%;
+}
+#mem6:checked ~ .visible-mem .mems {
+	margin-left: -500%;
+}
+
+#mem1:checked ~ .visible-title .titles {
+	margin-left: 0;
+}
+#mem2:checked ~ .visible-title .titles {
+	margin-left: -100%;
+}
+#mem3:checked ~ .visible-title .titles {
+	margin-left: -200%;
+}
+#mem4:checked ~ .visible-title .titles {
+	margin-left: -300%;
+}
+#mem5:checked ~ .visible-title .titles {
+	margin-left: -400%;
+}
+#mem6:checked ~ .visible-title .titles {
+	margin-left: -500%;
+}
+
+#mem1:checked ~ .controls label:nth-child(1) {
+	background-color: rgb(90, 44, 0);
+}
+#mem2:checked ~ .controls label:nth-child(2) {
+	background-color: rgb(90, 44, 0);
+}
+#mem3:checked ~ .controls label:nth-child(3) {
+	background-color: rgb(90, 44, 0);
+}
+#mem4:checked ~ .controls label:nth-child(4) {
+	background-color: rgb(90, 44, 0);
+}
+#mem5:checked ~ .controls label:nth-child(5) {
+	background-color: rgb(90, 44, 0);
+}
+#mem6:checked ~ .controls label:nth-child(6) {
+	background-color: rgb(90, 44, 0);
+}

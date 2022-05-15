@@ -134,3 +134,36 @@ body{
 	height: 100%;
 	text-align: center;
 }
+
+.controls{
+	width: 32%;
+	height: 10%;
+	background-color: #424242;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-radius: 10%;
+}
+
+.controls label{
+	display: inline-block;
+	width: 15%;
+	height: 70%;
+	border-radius: 50%;
+	background-color: rgb(243, 152, 14);
+	cursor: pointer;
+	border: 0.3em solid #424242;
+	transition: 0.3s;
+}
+
+.controls label:hover{
+	background-color: rgb(255, 238, 1);
+	transform: scale(1.2);
+}
+
+.controls label:active{
+	background-color: rgb(165, 83, 6);
+}

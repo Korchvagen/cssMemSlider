@@ -224,3 +224,40 @@ body{
 #mem6:checked ~ .controls label:nth-child(6) {
 	background-color: rgb(90, 44, 0);
 }
+
+@media (max-width: 320px){
+	body{
+		font-size: 1.3em;
+	}
+	.container-slider{
+		width: 95%;
+	}
+	.visible-mem{
+		width: 100%;
+	}
+	.visible-title{
+		width: 70%;
+		height: 10%;
+	}
+	.controls{
+		width: 60%;
+	}
+	.controls label{
+		height: 80%;
+	}
+	.mem1{
+		background-position-x: center;
+	}
+	.mem3{
+		background-size: 100% 100%;
+	}
+	.mem4{
+		background-size: 100% 100%;
+	}
+	.mem5{
+		background-size: 100% 100%;
+	}
+	.mem6{
+		background-position-x: center;
+	}
+}

@@ -30,3 +30,84 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+	font-family: 'Lobster', cursive;
+	font-size: 1.8em;
+	color: rgb(231, 202, 175);
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/backgroundImg.png);
+	background-size: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-slider{
+    width: 50%;
+    height: 80%;
+    background-image: linear-gradient(to bottom right, #383838, #b93434);
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5%;
+}
+
+.container-slider input{
+	display: none;
+}
+
+.visible-mem{
+	width: 80%;
+	height: 90%;
+	overflow: hidden;
+	border-radius: 2%;
+	box-shadow: 1em 1em 1em #383838;
+}
+
+.mems{
+	width: 600%;
+	height: 100%;
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+
+.slide{
+	width: 16.66666667%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mem1{
+	background-image: url(./assets/mems/1.jpg);
+}
+
+.mem2{
+	background-image: url(./assets/mems/2.jpg);
+}
+
+.mem3{
+	background-image: url(./assets/mems/3.jpg);
+	background-size: cover;
+}
+
+.mem4{
+	background-image: url(./assets/mems/4.jpg);
+}
+
+.mem5{
+	background-image: url(./assets/mems/5.jpg);
+	background-size: cover;
+}
+
+.mem6{
+	background-image: url(./assets/mems/6.jpg);
+	background-size: cover;
+	background-position-y: 100%;
+}

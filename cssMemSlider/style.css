@@ -1,0 +1,278 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 1em;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+button{cursor: pointer;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+	font-family: 'Lobster', cursive;
+	font-size: 1.8em;
+	color: rgb(231, 202, 175);
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img/backgroundImg.png);
+	background-size: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-slider{
+    width: 50%;
+    height: 80%;
+    background-image: linear-gradient(to bottom right, #383838, #b93434);
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5%;
+}
+
+.container-slider input{
+	display: none;
+}
+
+.visible-mem{
+	width: 80%;
+	height: 90%;
+	overflow: hidden;
+	border-radius: 2%;
+	box-shadow: 1em 1em 1em #383838;
+}
+
+.mems{
+	width: 600%;
+	height: 100%;
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+
+.slide{
+	width: 16.66666667%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mem1{
+	background-image: url(./assets/mems/1.jpg);
+}
+
+.mem2{
+	background-image: url(./assets/mems/2.jpg);
+}
+
+.mem3{
+	background-image: url(./assets/mems/3.jpg);
+	background-size: cover;
+}
+
+.mem4{
+	background-image: url(./assets/mems/4.jpg);
+}
+
+.mem5{
+	background-image: url(./assets/mems/5.jpg);
+	background-size: cover;
+}
+
+.mem6{
+	background-image: url(./assets/mems/6.jpg);
+	background-size: cover;
+	background-position-y: 100%;
+}
+
+.under-container{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visible-title{
+	width: 40%;
+	height: 40%;
+	margin-top: 5%;
+	overflow: hidden;
+	border: #383838 0.15em solid;
+	padding-top: 1%;
+	border-radius: 10%;
+}
+
+.titles{
+	width: 600%;
+	height: 100%;
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+
+.titles p{
+	width: 16.66666667%;
+	height: 100%;
+	text-align: center;
+}
+
+.controls{
+	width: 40%;
+	height: 45%;
+	background-color: #424242;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-radius: 10%;
+}
+
+.controls label{
+	display: inline-block;
+	width: 15%;
+	height: 70%;
+	border-radius: 50%;
+	background-color: rgb(243, 152, 14);
+	cursor: pointer;
+	border: 0.3em solid #424242;
+	transition: 0.3s;
+}
+
+.controls label:hover{
+	background-color: rgb(255, 238, 1);
+	transform: scale(1.2);
+}
+
+.controls label:active{
+	background-color: rgb(165, 83, 6);
+}
+
+#mem1:checked ~ .visible-mem .mems {
+	margin-left: 0;
+}
+#mem2:checked ~ .visible-mem .mems {
+	margin-left: -100%;
+}
+#mem3:checked ~ .visible-mem .mems {
+	margin-left: -200%;
+}
+#mem4:checked ~ .visible-mem .mems {
+	margin-left: -300%;
+}
+#mem5:checked ~ .visible-mem .mems {
+	margin-left: -400%;
+}
+#mem6:checked ~ .visible-mem .mems {
+	margin-left: -500%;
+}
+
+#mem1:checked ~ .under-container .visible-title .titles {
+	margin-left: 0;
+}
+#mem2:checked ~ .under-container .visible-title .titles {
+	margin-left: -100%;
+}
+#mem3:checked ~ .under-container .visible-title .titles {
+	margin-left: -200%;
+}
+#mem4:checked ~ .under-container .visible-title .titles {
+	margin-left: -300%;
+}
+#mem5:checked ~ .under-container .visible-title .titles {
+	margin-left: -400%;
+}
+#mem6:checked ~ .under-container .visible-title .titles {
+	margin-left: -500%;
+}
+
+#mem1:checked ~ .under-container .controls label:nth-child(1) {
+	background-color: rgb(90, 44, 0);
+}
+#mem2:checked ~ .under-container .controls label:nth-child(2) {
+	background-color: rgb(90, 44, 0);
+}
+#mem3:checked ~ .under-container .controls label:nth-child(3) {
+	background-color: rgb(90, 44, 0);
+}
+#mem4:checked ~ .under-container .controls label:nth-child(4) {
+	background-color: rgb(90, 44, 0);
+}
+#mem5:checked ~ .under-container .controls label:nth-child(5) {
+	background-color: rgb(90, 44, 0);
+}
+#mem6:checked ~ .under-container .controls label:nth-child(6) {
+	background-color: rgb(90, 44, 0);
+}
+
+@media (max-width: 320px){
+	body{
+		font-size: 1em;
+	}
+	.container-slider{
+		width: 95%;
+	}
+	.visible-mem{
+		width: 100%;
+	}
+    .under-container{
+        width: 100%;
+		flex-direction: column-reverse;
+    }
+	.visible-title{
+		width: 40%;
+		height: 60%;
+		margin-top: 2%;
+	}
+	.controls{
+		width: 50%;
+        height: 70%;
+	}
+	.controls label{
+		height: 90%;
+	}
+	.mem1{
+		background-position-x: center;
+	}
+    .mem2{
+		background-position-x: center;
+	}
+	.mem3{
+		background-size: 100% 100%;
+	}
+	.mem4{
+		background-size: 100% 100%;
+	}
+	.mem5{
+		background-size: 100% 100%;
+	}
+	.mem6{
+		background-position-x: center;
+	}
+}

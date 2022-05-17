@@ -22,9 +22,7 @@ html,body{
 	-webkit-text-size-adjust: 100%;
 }
 input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
 button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
@@ -245,17 +243,19 @@ body{
 	}
     .under-container{
         width: 100%;
+		flex-direction: column-reverse;
     }
 	.visible-title{
 		width: 40%;
-		height: 50%;
+		height: 60%;
+		margin-top: 2%;
 	}
 	.controls{
 		width: 50%;
-        height: 40%;
+        height: 70%;
 	}
 	.controls label{
-		height: 70%;
+		height: 90%;
 	}
 	.mem1{
 		background-position-x: center;
